@@ -1,4 +1,4 @@
-## PMMD
+## Pseudo Label Guided Multimodal Manipulation Detection(PMMD)
 
 # Code for PMMD: One Framework to Detect and Localize: Towards Unified Multimodal Manipulation Forensics
 
