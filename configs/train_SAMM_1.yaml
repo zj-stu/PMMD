@@ -1,0 +1,51 @@
+train_file: ["/Home/Download/4T/zhoujun/DG/datasets/SAMM/train.json"]
+val_file: ["/Home/Download/4T/zhoujun/DG/datasets/SAMM/val.json"]          
+bert_config: 'configs/config_beit2_base.json'
+
+
+## Vision Encoder
+use_beit_v2: True
+vision_config: 'configs/config_beit2_base.json'
+image_res: 256
+patch_size: 16
+local_attn_depth: -1
+
+
+
+## Text Encoder (& Cross Encoder)
+model_type: 'CrossViewLM'
+
+text_encoder: '/Home/Download/4T/zhoujun/DG/models/bert-base-uncased'
+text_num_hidden_layers: 18
+text_fusion_start_at: 12
+text_drop_path_rate: 0.1
+cross_drop_path_rate: 0.1
+
+
+vision_width: 768
+embed_dim: 256
+batch_size_train: 8
+batch_size_val: 32
+temp: 0.07
+queue_size: 65536
+momentum: 0.995
+alpha: 0.4
+max_words: 50
+label_smoothing: 0.0
+
+
+loss_bbox_L_wgt: 1
+loss_giou_L_wgt: 0.1
+
+
+
+
+loss_CSA_wgt: 0.1 #0.05
+loss_PWC_wgt: 1
+loss_bbox_wgt: 1
+loss_giou_wgt: 0.1
+
+
+optimizer: {opt: adamW, lr: 5e-6, lr_img: 1e-05, weight_decay: 0.02}
+schedular: {sched: cosine, lr: 5e-6, epochs: 51, min_lr: 1e-8, decay_rate: 1, warmup_lr: 1e-6, warmup_epochs: 10, cooldown_epochs: 0}
+
