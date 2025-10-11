@@ -1,6 +1,6 @@
 <div align="center">
 
-# Code for PMMD: One Framework to Detect and Localize: Towards Unified Multimodal Manipulation Forensics
+# Code for PMMD: Spatial Intelligence as a Prior: A Two-Stage Framework for Multimodal Forgery Detection and Grounding
 <br>
 
 <img src='./figs/motivation.png' width='90%'>
