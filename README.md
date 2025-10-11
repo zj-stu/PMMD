@@ -1,7 +1,11 @@
 ## Pseudo Label Guided Multimodal Manipulation Detection(PMMD)
 
 # Code for PMMD: One Framework to Detect and Localize: Towards Unified Multimodal Manipulation Forensics
+<br>
 
+<img src='./figs/motivation.png' width='90%'>
+
+</div>
 This implementation is written by Bingwen Hu and Jun Zhou at Anhui University of Technology.
 
 ## Prerequisites:
