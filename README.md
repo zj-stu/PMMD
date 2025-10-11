@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Spatial Intelligence as a Prior: A Two-Stage Framework for Multimodal Forgery Detection and Grounding
+# Spatial Intelligence as a Prior: A Two-Stage Framework for Multimodal Forgery Detection and Grounding
 <br>
 
 <img src='./figs/motivation.png' width='90%'>
