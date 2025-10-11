@@ -55,7 +55,7 @@ For dataset preparation, please refer to the detailed instructions in:
 👉 [MultiModal-DeepFake (by rshaojimmy)](https://github.com/rshaojimmy/MultiModal-DeepFake)
 
 
-## Test
+
 ## Testing
 Modify `test.sh` and run:
 ```
