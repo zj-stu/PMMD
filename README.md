@@ -1,5 +1,4 @@
 <div align="center">
-## Pseudo Label Guided Multimodal Manipulation Detection (PMMD)
 
 # Code for PMMD: One Framework to Detect and Localize: Towards Unified Multimodal Manipulation Forensics
 <br>
@@ -17,7 +16,7 @@ Our two-stage architecture consists of:
 1. Forgery Region Proposal Generation
 2. Forgery Region-Aided Manipulation Detection and Grounding
 
-The framework of the proposed HAMMER model:
+The framework of the proposed PMMD model:
 
 <div align="center">
 <img src='./figs/framework.png' width='90%'>
@@ -30,5 +29,39 @@ This implementation is written by Bingwen Hu and Jun Zhou at Anhui University of
 - Pytorch 1.12
 - CUDA 11.6 or above
 
-## Train & Test
-Other modules will be updated after publication.
+
+## Installation
+
+### Download
+```
+mkdir code
+cd code
+git clone https://github.com/zj-stu/PMMD.git
+cd PMMD
+```
+
+### Environment
+We recommend using Anaconda to manage the python environment:
+```
+conda create -n PMMD python=3.8
+conda activate PMMD
+conda install --yes -c pytorch pytorch=1.10.0 torchvision==0.11.1 cudatoolkit=11.3
+pip install -r requirements.txt
+conda install -c conda-forge ruamel_yaml
+```
+
+### Prepare data
+For dataset preparation, please refer to the detailed instructions in:  
+👉 [MultiModal-DeepFake (by rshaojimmy)](https://github.com/rshaojimmy/MultiModal-DeepFake)
+
+
+## Test
+## Testing
+Modify `test.sh` and run:
+```
+sh test.sh
+```
+
+##  Acknowledgement
+
+We sincerely thank the authors of [MultiModal-DeepFake](https://github.com/rshaojimmy/MultiModal-DeepFake) for their excellent work.  
