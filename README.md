@@ -58,16 +58,13 @@ For dataset preparation, please refer to the detailed instructions in:
 
 
 ## Testing
-1. Download the pre-trained model checkpoint.
+1. Download the pre-trained model checkpoint.<br>
+   🤗 Hugging Face: [PMMD Best Checkpoint](https://huggingface.co/zj-1/PMMD/tree/main)
 2. Modify test.sh to set your desired configuration.
 3. Run inference:
 ```
 sh test.sh
 ```
-
-### Model checkpoint
-
-The best checkpoint of our trained model: [best-model-checkpoint](https://huggingface.co/zj-1/PMMD/tree/main)  
 
 ##  Acknowledgement
 
